@@ -283,7 +283,7 @@ function(toolchain_deps toolchain_deps_dir toolchain_install_dir toolchain_suffi
 
     ExternalProject_Add(vita-toolchain${suffix}
         DEPENDS libelf${suffix} zlib${suffix} libzip${suffix} libyaml${suffix}
-        GIT_REPOSITORY https://github.com/vitasdk/vita-toolchain
+        GIT_REPOSITORY https://github.com/soarqin/vita-toolchain
         GIT_TAG ${TOOLCHAIN_TAG}
         ${GIT_SHALLOW_SUPPORT}
         # Set prefix to "/" here to be able to install twice
